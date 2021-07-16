@@ -55,7 +55,7 @@
 
 	    </div>
 
-
+      
 	</nav>
     <title>Formulario de inscripción para prácticas</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -173,7 +173,7 @@
         <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
           <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 520px">
           <img src="images/logounab.png" width="160" height="160"> </div>
-          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 1214px">
+          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 1190px">
           <img src="images/infounab.png" width="190" height="90"> </div>
         <div class="item">
           <p><br><br>  </br></br></p>
@@ -206,12 +206,12 @@
           <input type="text" name="comuna"/>
           <div class = "checkbox">
               <p>Plan paso a paso actual de su comuna:</p>
-              <input type="checkbox" name="paso" value="paso1">Paso 1 (cuarentena)</input>
-              <input type="checkbox" name="paso" value="paso2">Paso 2 (transición)</input>
-              <input type="checkbox" name="paso" value="paso1">Paso 3 (preparación)</input>
-              <input type="checkbox" name="paso" value="paso2">Paso 4 (apertura)</input>
+              <input type="checkbox" name="paso" value="paso1">Paso 1 (Cuarentena)</input>
+              <input type="checkbox" name="paso" value="paso2">Paso 2 (Transición)</input>
+              <input type="checkbox" name="paso" value="paso1">Paso 3 (Preparación)</input>
+              <input type="checkbox" name="paso" value="paso2">Paso 4 (Apertura)</input>
           </div>
-          <p>Fono móvil / Fono fijo:</p>
+          <p><br>Fono móvil / Fono fijo:</br></p>
           <input type="text" name="fono"/>
         </div>  
         <div class="btn-block">
@@ -219,6 +219,11 @@
           <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
         </div>
       </form>
+      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
+      <div class="container text-center ">
+        <small>Iván Vicencio &copy; versión 1.0</small>
+      </div>
+  	</footer>
 
 <?php
 

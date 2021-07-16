@@ -166,9 +166,14 @@
         </div>
         <div class="btn-block">
 		  <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Formulario"></a>
+      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 45.7%;">
+      <div class="container text-center ">
+        <small>Iván Vicencio &copy; versión 1.0</small>
+      </div>
+  	  </footer>
         </div>
-		
       </form>
+
 
 
 

@@ -1,54 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
+  <head>
 
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css%22%3E">
-
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap%22%3E">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-<nav class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center">
-
-<a href="/" class="navbar-brand d-flex w-50 mr-auto">Control y gestión de prácticas </a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="navbar-collapse collapse w-100" id="collapsingNavbar" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/logoUnabicono.ico">
+    <title>Iniciar sesión</title>
     
-    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="login.php">Iniciar sesion</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contáctanos</a>
-        </li>
-        
-    </ul>
 
 
-</div>
+  </head>
+
+  <body>
+
+	<!-- <nav class="navbar navbar-dark bg-primary"> -->
+
+
+	<nav class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center">
+
+	    <a href="/" class="navbar-brand d-flex w-50 mr-auto">Control y gestión de prácticas </a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+
+	    <div class="navbar-collapse collapse w-100" id="collapsingNavbar" >
+	    	
+	        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+
+	        	<li class="nav-item active">
+	                <a class="nav-link" href="index.php">Inicio</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="login.php">Iniciar sesion</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="#">Contáctanos</a>
+	            </li>
+	            
+	        </ul>
+
+
+	    </div>
 
 
 </nav>
@@ -101,7 +97,7 @@
 </body>
 <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
-        <small>Copyright &copy; Iván Vicencio Lodis</small>
+        <small>Ivan Vicencio &copy; versión 1.0</small>
       </div>
   	</footer>
 

@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/logoUnabicono.ico">
+    <title>Formulario práctica</title>
 
 
   </head>
@@ -171,10 +173,10 @@
     <div class="testbox">
       <form action="#" class="formulariopractica" id="formulariopractica" name="formulariopractica" method="POST">
         <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
-          <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 520px">
-          <img src="images/logounab.png" width="160" height="160"> </div>
-          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 1190px">
-          <img src="images/infounab.png" width="190" height="90"> </div>
+          <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 395px">
+          <img src="images/logounab.png" width="130" height="130"> </div>
+          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
+          <img src="images/infounab.png" width="150" height="50"> </div>
         <div class="item">
           <p><br><br>  </br></br></p>
           <p><br>Fecha:</br></p>
@@ -206,10 +208,10 @@
           <input type="text" name="comuna"/>
           <div class = "checkbox">
               <p>Plan paso a paso actual de su comuna:</p>
-              <input type="checkbox" name="paso" value="paso1">Paso 1 (Cuarentena)</input>
-              <input type="checkbox" name="paso" value="paso2">Paso 2 (Transición)</input>
-              <input type="checkbox" name="paso" value="paso1">Paso 3 (Preparación)</input>
-              <input type="checkbox" name="paso" value="paso2">Paso 4 (Apertura)</input>
+              <input type="checkbox" name="paso" value="Paso 1 (Cuarentena)">Paso 1 (Cuarentena)</input>
+              <input type="checkbox" name="paso" value="Paso 2 (Transicion)">Paso 2 (Transición)</input>
+              <input type="checkbox" name="paso" value="Paso 3 (Preparacion)">Paso 3 (Preparación)</input>
+              <input type="checkbox" name="paso" value="Paso 4 (Apertura)">Paso 4 (Apertura)</input>
           </div>
           <p><br>Fono móvil / Fono fijo:</br></p>
           <input type="text" name="fono"/>
@@ -250,9 +252,6 @@
                                                                             '$paso',
                                                                             '$fono')";
     $ejecutarInserztar = mysqli_query($enlace, $insertarDatos);
-    if (isset($_POST['paso'])){
-      echo $_POST['paso']; // Muestra el CheckBox marcado.
-      }
 
     
   }

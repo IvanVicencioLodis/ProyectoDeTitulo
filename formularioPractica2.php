@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/logoUnabicono.ico">
+    <title>Formulario práctica</title>
 
 
   </head>
@@ -43,7 +45,7 @@
 
 	    </div>
 
-
+      
 	</nav>
     <title>Formulario de inscripción para prácticas</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -108,6 +110,13 @@
       position: relative;
       margin: 10px 0;
       }
+      .checkbox{
+      display: flex;
+      align-items: center;
+      padding: 3px;
+
+
+      }
       input[type="date"]::-webkit-inner-spin-button {
       display: none;
       }
@@ -150,47 +159,75 @@
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
     <div class="testbox">
-      <form action="/">
-        <h1 style= text-align:center><u>SOLICITUD PRÁCTICA</u></h1>
-        <div class="item">
-          <p>Fecha:</p>
-          <input type="date" name="name" required/>
-          <i class="fas fa-calendar-alt"></i>
-        </div>
-        <h2 style= text-align:left><br><u>Antecedentes académicos estudiante</u></br></h2>
-        <div class="item">
-          <p></p>
-          <div>
-          <p>Apellido materno:</p>
-          <input type="text" name="rut" required/>
-          <p>Apellido paterno:</p>
-          <input type="text" name="name"/>
-          <p>Nombres:</p>
-          <input type="text" name="name"/>
+
+      <form action="actionFormularioPractica2.php" class="formulariopractica2" id="formulariopractica2" name="formulariopractica2" method="POST">
+
+        <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
+          <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 395px">
+          <img src="images/logounab.png" width="130" height="130"> </div>
+          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
+          <img src="images/infounab.png" width="150" height="50"> </div>
+        <h2 style= text-align:left><br><u>ANTECEDENTES ACADEMICOS ESTUDIANTE</u></br></h2>
+       
+        <div class = "checkbox">
+              <p><br>Seleccione la carrerra a la que pertenece:</p></br>
+              <input type="checkbox" name="queCarrera" value="Ingenería Civil Informática">Ingenería Civil Informática</input>
+              <input type="checkbox" name="queCarrera" value="Ingeniería en Computación e Informática">Ingeniería en Computación e Informática</input>
+
           </div>
-        </div>
-        <div class="item">
-          <p>Rut:</p>
-          <input type="text" name="rut"/>
-          <p>Correo institucional:</p>
-          <input type="text" name="name"/>
-          <p>Correo personal:</p>
-          <input type="text" name="name"/>
-          <p>Comuna en la que reside:</p>
-          <input type="text" name="name"/>
-          <p>Paso (plan paso a paso Minsal) actual de su comuna: </p>
-          <select>
-            <option value="">*Seleccione uno*</option>
-            <option value="paso1">Paso 1(Cuarentena)</option>
-            <option value="paso2">Paso 2(Transición)</option>
-            <option value="paso3">Paso 3(Preparación)</option>
-            <option value="paso4">Paso 4(Apertura)</option>
-          </select>
-          <p>Fono móvil / Fono fijo:</p>
-          <input type="text" name="rut"/>
-        </div>  
+
+          <div class = "checkbox">
+              <p><br>Seleccione la práctica en la que solicita autorización:</p></br>
+              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 1 o Práctica temprana">Pre-Profesional 1 o Práctica temprana</input>
+              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 2 o práctica profesional">Pre-Profesional 2 o práctica profesional</input>
+
+          </div>
+
+          <div class = "checkbox">
+              <p><br>Seleccione los semestres que tenga cursados completamente: </p></br>
+              <input type="checkbox" name="semCursadoCompl" value="cc1">1</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc2">2</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc3">3</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc4">4</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc5">5</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc6">6</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc7">7</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc8">8</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc9">9</input>
+              <input type="checkbox" name="semCursadoCompl" value="cc10">10</input>
+
+          </div>
+
+          <div class = "checkbox">
+              <p><br>Seleccione los semestres que tenga asignaturas aprobadas: </p></br>
+              <input type="checkbox" name="semAsigAprobadas" value="aa1">1</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa2">2</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa3">3</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa4">4</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa5">5</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa6">6</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa7">7</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa8">8</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa9">9</input>
+              <input type="checkbox" name="semAsigAprobadas" value="aa10">10</input>
+
+          </div>
+
+          <div class = "checkbox">
+              <p><br>Seleccione el tipo de práctica: </p></br>
+              <input type="checkbox" name="tipoPractica" value="Remota">Remota</input>
+              <input type="checkbox" name="tipoPractica" value="Presencial">Presencial</input>
+              <input type="checkbox" name="tipoPractica" value="Mixta">Mixta</input>
+
+          </div>
+
         <div class="btn-block">
-          <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente"></a>
-          <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atrás"></a>
+          <input class="btn" type="submit" name="siguiente1" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente">
+          <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
         </div>
       </form>
+      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
+      <div class="container text-center ">
+        <small>Iván Vicencio &copy; versión 1.0</small>
+      </div>
+  	</footer>

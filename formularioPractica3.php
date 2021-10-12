@@ -167,15 +167,7 @@
           <img src="images/logounab.png" width="130" height="130"> </div>
           <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
           <img src="images/infounab.png" width="150" height="50"> </div>
-        <div class="item">
-          <p><br><br>  </br></br></p>
-          <p><br>Fecha:</br></p>
-          <input type="date" name="fecha"  required/>
-          <i class="fas fa-calendar-alt" style="top: 140px;" ></i>
-          <br></br>
-          <hr size="8px" color="black" />
-        </div>
-        <h2 style= text-align:left><br><u>ANTECEDENTES PERSONALES ESTUDIANTE</u></br></h2>
+        <h2 style= text-align:left><br><u>ANTECEDENTES EMPRESA</u></br></h2>
         <div class="item">
           <p></p>
           <div>
@@ -183,6 +175,10 @@
           <input type="text" name="apMaterno" required />
           <p>Apellido paterno:</p>
           <input type="text" name="apPaterno" required/>
+          <p>Nombres:</p>
+          <input type="text" name="nombres" required/>
+          <p>Nombres:</p>
+          <input type="text" name="nombres" required/>
           <p>Nombres:</p>
           <input type="text" name="nombres" required/>
           </div>

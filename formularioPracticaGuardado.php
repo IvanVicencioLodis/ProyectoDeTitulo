@@ -158,75 +158,30 @@
     </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
-    <div class="testbox">
 
-      <form action="actionFormularioPractica3.php" class="formulariopractica3" id="formulariopractica3" name="formulariopractica3" method="POST">
+        <div id="logo" style="position:absolute; width:250px; height:100px; top: 370px; left: 650px">
+        <img src="images/ticketverde.png" width="220px" height="250px"> </div>
 
-        <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
+      <div class="testbox">
+
+      <form action="actionFormularioPractica4.php" class="formulariopractica4" id="formulariopractica4" name="formulariopractica4" method="POST">
+
+        <h1 style= text-align:center><u><br><br><FONT COLOR="green">Felicitaciones !!!!</br></br></u></h1></FONT>
+        <h2 style= text-align:left>Su formulario ha sido enviado al jefe de carrera, debe estar atento para conocer el estado de su práctica!</h2>
           <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 395px">
           <img src="images/logounab.png" width="130" height="130"> </div>
           <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
           <img src="images/infounab.png" width="150" height="50"> </div>
-        <h2 style= text-align:left><br><u>ANTECEDENTES EMPRESA</u></br></h2>
-        <div class="item">
-          <p></p>
-          
-          <div>
-          <p>Nombre empresa:</p>
-          <input type="text" name="nombreEmpresa" required />
-          <p>Rut:</p>
-          <input type="text" name="rutEmpresa" required/>
-          <p>Giro:</p>
-          <input type="text" name="giroEmpresa" />
-          <p>Direccion:</p>
-          <input type="text" name="direccionEmpresa" />
-          <p>Comuna:</p>
-          <input type="text" name="comunaEmpresa" />
-          </div>
-        </div>
-         
-        <div class = "checkbox">
-              <p>Plan paso a paso(MinSal) actual de la comuna:</p>
-              <input type="checkbox" name="paso1" value="Paso 1 (Cuarentena)">Paso 1 (Cuarentena)</input>
-              <input type="checkbox" name="paso1" value="Paso 2 (Transicion)">Paso 2 (Transición)</input>
-              <input type="checkbox" name="paso1" value="Paso 3 (Preparacion)">Paso 3 (Preparación)</input>
-              <input type="checkbox" name="paso1" value="Paso 4 (Apertura)">Paso 4 (Apertura)</input>
-          </div>
-          
-          <p><br>Fono:</br></p>
-          <input type="text" name="fonoEmpresa"/>
-          <p>Nombre(s) supervisor:</p>
-          <input type="text" name="nombreSupervisor"/>
-          <p>Apellidos supervisor:</p>
-          <input type="text" name="apellidoSupervisor"/>
-          <p>Cargo que ocupa supervisor:</p>
-          <input type="text" name="cargoSupervisor"/>
-          <p>Correo supervisor:</p>
-          <input type="text" name="correoSupervisor"/>
-          <p>Teléfono supervisor:</p>
-          <input type="text" name="telefonoSupervisor"/>
-          <p><i><b><br>Si la práctica es presencial o mixta</br><i></b></p>
-          <p><br>Dirección donde se realizara la práctica:</br></p>
-          <input type="text" name="direccionDePractica"/>
-          
-          <div class = "checkbox">
-              <p>Plan paso a paso(MinSal) actual de la comuna:</p>
-              <input type="checkbox" name="paso2" value="Paso 1 (Cuarentena)">Paso 1 (Cuarentena)</input>
-              <input type="checkbox" name="paso2" value="Paso 2 (Transicion)">Paso 2 (Transición)</input>
-              <input type="checkbox" name="paso2" value="Paso 3 (Preparacion)">Paso 3 (Preparación)</input>
-              <input type="checkbox" name="paso2" value="Paso 4 (Apertura)">Paso 4 (Apertura)</input>
-          </div>
-          
-          <p><br>Teléfono de contacto lugar de práctica:</br></p>
-          <input type="text" name="telefonoLugarPractica"/>
+
         
-          <div class="btn-block">
-            <input class="btn" type="submit" name="siguiente2" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente">
-            <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
-          </div>
+        
+
+        <div class="btn-block">
+        <a href="index.php"><br><br><br><br><br> </br><br> </br><br> </br>  </br></br></br></br> <input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Volver al inicio">  </a>
+        
+        </div>
       </form>
-    </div>
-    <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
+      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>
       </div>

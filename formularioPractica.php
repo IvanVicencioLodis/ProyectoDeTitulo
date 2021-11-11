@@ -206,11 +206,13 @@
           <p><br>Fono móvil / Fono fijo:</br></p>
           <input type="text" name="fono"/>
         </div>  
+        
         <div class="btn-block">
           <input class="btn" type="submit" name="siguiente" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente">
           <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
         </div>
       </form>
+      
       <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>

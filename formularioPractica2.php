@@ -183,33 +183,15 @@
 
           </div>
 
-          <div class = "checkbox">
-              <p><br>Seleccione los semestres que tenga cursados completamente: </p></br>
-              <input type="checkbox" name="semCursadoCompl" value="cc1">1</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc2">2</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc3">3</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc4">4</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc5">5</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc6">6</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc7">7</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc8">8</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc9">9</input>
-              <input type="checkbox" name="semCursadoCompl" value="cc10">10</input>
+          <div>
+              <p>Escriba los semestres que tenga cursados completamente(separados por un guión): </p>
+              <input type="text" name="semCursadoCompl" required />
 
           </div>
 
-          <div class = "checkbox">
-              <p><br>Seleccione los semestres que tenga asignaturas aprobadas: </p></br>
-              <input type="checkbox" name="semAsigAprobadas" value="aa1">1</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa2">2</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa3">3</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa4">4</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa5">5</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa6">6</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa7">7</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa8">8</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa9">9</input>
-              <input type="checkbox" name="semAsigAprobadas" value="aa10">10</input>
+          <div>
+              <p>Escriba los semestres que tenga asignaturas aprobadas: </p>
+              <input type="text" name="semAsigAprobadas" required />
 
           </div>
 
@@ -226,6 +208,7 @@
           <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
         </div>
       </form>
+      
       <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Inicio</title>
-
+  
     <link rel="shortcut icon" href="images/logoUnabicono.ico">
   </head>
 
@@ -34,6 +34,9 @@
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
+	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
@@ -150,23 +153,34 @@
     </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
+  <style>
+body {
+  background-image: url("images/unabsede4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
   <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
         <small>Copyright &copy; Iván Vicencio Lodis</small>
       </div>
   	</footer>
     <div class="testbox">
-      <form action="/">
+      <form action="" method="POST">
         <h1 style= text-align:center><u>Bienvenidos al sistema de control y gestión de prácticas</u></h1>
         <h2 style= text-align:center><br>Para poder saber los requisitos que necesita para poder optar a su práctica profesional, deberá ingresar su rut a continuación</br></h2>
         <div class="item">
           <p></p>
           <div>
-          <p>Rut:</p>
-          <input type="text" placeholder="ej: 20238512-5" name="rut"/>
+            
+          <p>Ingrese su rut(sin puntos ni guión): </p>
+          <input type="text" name="buscar" id="busqueda" placeholder="ej: 202385125" name="rut"/>
         </div>
         <div class="btn-block">
-		  <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Formulario"></a>
+        <a><input type="submit" value="Buscar" name="btn" style="border: #000 1px solid; background-color: #56BAF9" value="Buscar"></a>
+
+        <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Formulario"></a>
       <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 45.7%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>
@@ -174,6 +188,55 @@
   	  </footer>
         </div>
       </form>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      <?php
+        $servidor="localhost";
+        $usuario="root";
+        $clave="";
+        $baseDeDatos="formulariopractica";
+        
+        $enlace = mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
+        $db=mysqli_select_db($enlace,'alumnos');
+
+        if(!$enlace){
+          echo"Errorr en la conexion con el servidor";
+        }
+        if(isset($_POST['btn'])){
+          $Rut=$_POST['buscar'];
+          $query="SELECT * FROM alumnos WHERE Rut='$Rut' ";
+          $result=mysqli_query($enlace, $query);
+          while($row=mysqli_fetch_array($result, MYSQLI_ASSOC))
+          {
+            ?>
+            
+            <h2 style= text-align:center>Bienvenidos <b style="color:#069">"<?php echo $row['Nombres'] ?> <?php echo $row['Apellidos'] ?>"</b> a la consulta de requisitos para la inscripccion de tu práctica!<br></h2></br>
+            <h2 style= text-align:left>Sus datos son los siguientes: <br></h2></br>
+            <p>Rut:</p>
+            <input type="text" name="Rut" value="<?php echo $row['Rut'] ?> "/>
+            <p>Nombres:</p>
+            <input type="text" name="Nombres" value="<?php echo $row['Nombres'] ?> "/>
+            <p>Apellidos</p>
+            <input type="text" name="Apellidos" value="<?php echo $row['Apellidos'] ?> "/>
+            <p>Carrera:</p>
+            <input type="text" name="Carrera" value="<?php echo $row['Carrera'] ?> "/>
+            <p>Tipo de malla:</p>
+            <input type="text" name="tipoMalla" value="<?php echo $row['tipoMalla'] ?> "/>
+
+  
+
+            <?php
+            
+          }
+          
+        }
+        ?>
+        
+
+      
 
 
 

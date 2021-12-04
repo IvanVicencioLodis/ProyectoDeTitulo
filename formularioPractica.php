@@ -17,7 +17,7 @@
   <body>
 
 	<!-- <nav class="navbar navbar-dark bg-primary"> -->
-
+  
 
 	<nav class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center">
 
@@ -35,6 +35,9 @@
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
+	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
@@ -156,6 +159,14 @@
       background-color: #0666a3;
       }
     </style>
+      <style>
+  body {
+  background-image: url("images/unabsede4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+  </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
     <div class="testbox">
@@ -188,7 +199,7 @@
           </div>
         </div>
         <div class="item">
-          <p>Rut:</p>
+          <p>Rut(sin puntos ni guión):</p>
           <input type="text" name="rut" required/>
           <p>Correo institucional:</p>
           <input type="text" name="correoIns"/>

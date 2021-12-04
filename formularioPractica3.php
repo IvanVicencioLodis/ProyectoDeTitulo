@@ -36,6 +36,9 @@
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
 	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
+	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
 	            </li>

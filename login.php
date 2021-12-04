@@ -37,6 +37,9 @@
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
 	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
+	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
 	            </li>
@@ -50,15 +53,15 @@
 </nav>
 
     <!-- Default form login -->
-    <form class="text-center border border-light p-5" action="#!">
+    <form class="text-center border border-light p-5" action="validar.php" method="post">
 
         <p class="h4 mb-4">Iniciar sesión</p>
 
         <!-- Email -->
-        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Correo electrónico">
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Correo electrónico" name="correo">
 
         <!-- Password -->
-        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña" name="contraseña">
 
         <div class="d-flex justify-content-around">
             <div>
@@ -75,7 +78,7 @@
         </div>
 
         <!-- Sign in button -->
-        <button class="btn btn-info btn-block my-4" type="submit">Iniciar sesión</button>
+        <button class="btn btn-info btn-block my-4" type="submit" value="ingresar">Iniciar sesión</button>
 
     </form>
     <!-- Default form login -->

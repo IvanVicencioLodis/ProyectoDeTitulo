@@ -25,7 +25,6 @@
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 	        <span class="navbar-toggler-icon"></span>
 	    </button>
-
 	    <div class="navbar-collapse collapse w-100" id="collapsingNavbar" >
 	    	
 	        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -159,67 +158,31 @@
       background-color: #0666a3;
       }
     </style>
-    <style>
-  body {
-  background-image: url("images/unabsede4.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  }
-  </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
-    <div class="testbox">
 
-      <form action="actionFormularioPractica2.php" class="formulariopractica2" id="formulariopractica2" name="formulariopractica2" method="POST">
+        <div id="logo" style="position:absolute; width:250px; height:100px; top: 370px; left: 650px">
+        <img src="images/ticketverde.png" width="220px" height="250px"> </div>
 
-        <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
+      <div class="testbox">
+
+      <form action="actionFormularioPractica4.php" class="formulariopractica4" id="formulariopractica4" name="formulariopractica4" method="POST">
+
+        <h1 style= text-align:center><u><br><br><FONT COLOR="green">Felicitaciones !!!!</br></br></u></h1></FONT>
+        <h2 style= text-align:left>Sus cambios han sido guardados correctamente!!</h2>
           <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 395px">
           <img src="images/logounab.png" width="130" height="130"> </div>
           <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
           <img src="images/infounab.png" width="150" height="50"> </div>
-        <h2 style= text-align:left><br><u>ANTECEDENTES ACADEMICOS ESTUDIANTE</u></br></h2>
-       
-        <div class = "checkbox">
-              <p><br>Seleccione la carrerra a la que pertenece:</p></br>
-              <input type="checkbox" name="queCarrera" value="Ingenería Civil Informática">Ingenería Civil Informática</input>
-              <input type="checkbox" name="queCarrera" value="Ingeniería en Computación e Informática">Ingeniería en Computación e Informática</input>
 
-          </div>
-
-          <div class = "checkbox">
-              <p><br>Seleccione la práctica en la que solicita autorización:</p></br>
-              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 1 o Práctica temprana">Pre-Profesional 1 o Práctica temprana</input>
-              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 2 o práctica profesional">Pre-Profesional 2 o práctica profesional</input>
-
-          </div>
-
-          <div>
-              <p>Escriba los semestres que tenga cursados completamente(separados por un guión): </p>
-              <input type="text" name="semCursadoCompl" required />
-
-          </div>
-
-          <div>
-              <p>Escriba los semestres que tenga asignaturas aprobadas: </p>
-              <input type="text" name="semAsigAprobadas" required />
-
-          </div>
-
-          <div class = "checkbox">
-              <p><br>Seleccione el tipo de práctica: </p></br>
-              <input type="checkbox" name="tipoPractica" value="Remota">Remota</input>
-              <input type="checkbox" name="tipoPractica" value="Presencial">Presencial</input>
-              <input type="checkbox" name="tipoPractica" value="Mixta">Mixta</input>
-
-          </div>
+        
+        
 
         <div class="btn-block">
-          <input class="btn" type="submit" name="siguiente1" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente">
-          <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
+        <a href="index.php"><br><br><br><br><br> </br><br> </br><br> </br>  </br></br></br></br> <input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Volver al inicio">  </a>
+        
         </div>
       </form>
-      
       <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>

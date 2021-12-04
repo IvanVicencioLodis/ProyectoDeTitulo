@@ -25,7 +25,6 @@
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 	        <span class="navbar-toggler-icon"></span>
 	    </button>
-
 	    <div class="navbar-collapse collapse w-100" id="collapsingNavbar" >
 	    	
 	        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -35,6 +34,9 @@
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
+	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
@@ -156,6 +158,14 @@
       background-color: #0666a3;
       }
     </style>
+    <style>
+  body {
+  background-image: url("images/unabsede4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+  </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
 

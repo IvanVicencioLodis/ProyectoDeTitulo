@@ -8,16 +8,23 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <title>Inicio</title>
+
     <link rel="shortcut icon" href="images/logoUnabicono.ico">
-    <title>Formulario práctica</title>
-
-
   </head>
 
   <body>
 
 	<!-- <nav class="navbar navbar-dark bg-primary"> -->
 
+  <style>
+body {
+  background-image: url("images/unabsede4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
 
 	<nav class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center">
 
@@ -48,7 +55,7 @@
 
 	    </div>
 
-      
+
 	</nav>
     <title>Formulario de inscripción para prácticas</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -113,13 +120,6 @@
       position: relative;
       margin: 10px 0;
       }
-      .checkbox{
-      display: flex;
-      align-items: center;
-      padding: 3px;
-
-
-      }
       input[type="date"]::-webkit-inner-spin-button {
       display: none;
       }
@@ -159,69 +159,114 @@
       background-color: #0666a3;
       }
     </style>
-    <style>
-  body {
-  background-image: url("images/unabsede4.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  }
-  </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
+  <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
+      <div class="container text-center ">
+        <small>Copyright &copy; Iván Vicencio Lodis</small>
+      </div>
+  	</footer>
     <div class="testbox">
-
-      <form action="actionFormularioPractica2.php" class="formulariopractica2" id="formulariopractica2" name="formulariopractica2" method="POST">
-
-        <h1 style= text-align:center><u><br>SOLICITUD PRÁCTICA</br></u></h1>
-          <div id="logo" style="position:absolute; width:500px; height:200px; top: 70px; left: 395px">
-          <img src="images/logounab.png" width="130" height="130"> </div>
-          <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
-          <img src="images/infounab.png" width="150" height="50"> </div>
-        <h2 style= text-align:left><br><u>ANTECEDENTES ACADEMICOS ESTUDIANTE</u></br></h2>
-       
-        <div class = "checkbox">
-              <p><br>Seleccione la carrerra a la que pertenece:</p></br>
-              <input type="checkbox" name="queCarrera" value="Ingenería Civil Informática">Ingenería Civil Informática</input>
-              <input type="checkbox" name="queCarrera" value="Ingeniería en Computación e Informática">Ingeniería en Computación e Informática</input>
-
-          </div>
-
-          <div class = "checkbox">
-              <p><br>Seleccione la práctica en la que solicita autorización:</p></br>
-              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 1 o Práctica temprana">Pre-Profesional 1 o Práctica temprana</input>
-              <input type="checkbox" name="tipAutoPractica" value="Pre-Profesional 2 o práctica profesional">Pre-Profesional 2 o práctica profesional</input>
-
-          </div>
-
+      <form action="" method="POST">
+        <h1 style= text-align:center><u>Bienvenidos al sistema de control y gestión de prácticas</u></h1>
+        <h2 style= text-align:center><br>Para poder saber los requisitos que necesita para poder optar a su práctica profesional, deberá ingresar su rut a continuación</br></h2>
+        <div class="item">
+          <p></p>
           <div>
-              <p>Escriba los semestres que tenga cursados completamente(separados por un guión): </p>
-              <input type="text" name="semCursadoCompl" required />
-
-          </div>
-
-          <div>
-              <p>Escriba los semestres que tenga asignaturas aprobadas: </p>
-              <input type="text" name="semAsigAprobadas" required />
-
-          </div>
-
-          <div class = "checkbox">
-              <p><br>Seleccione el tipo de práctica: </p></br>
-              <input type="checkbox" name="tipoPractica" value="Remota">Remota</input>
-              <input type="checkbox" name="tipoPractica" value="Presencial">Presencial</input>
-              <input type="checkbox" name="tipoPractica" value="Mixta">Mixta</input>
-
-          </div>
-
-        <div class="btn-block">
-          <input class="btn" type="submit" name="siguiente1" style="border: #000 1px solid; background-color: #56BAF9" value="Siguiente">
-          <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Atras"></a>
+          <p>Ingrese su rut(sin puntos ni guión): </p>
+          <input type="text" name="buscar" id="busqueda" placeholder="ej: 202385125" name="rut"/>
         </div>
-      </form>
-      
-      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 100%;">
+        <div class="btn-block">
+        <a><input type="submit" value="Buscar" name="btn" style="border: #000 1px solid; background-color: #56BAF9" value="Buscar"></a>
+
+      <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 45.7%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>
       </div>
-  	</footer>
+  	  </footer>
+        </div>
+      </form>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      <?php
+        $servidor="localhost";
+        $usuario="root";
+        $clave="";
+        $baseDeDatos="formulariopractica";
+        
+        $enlace = mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
+        $db=mysqli_select_db($enlace,'alumnos');
+
+        if(!$enlace){
+          echo"Errorr en la conexion con el servidor";
+        }
+        if(isset($_POST['btn'])){
+          $Rut=$_POST['buscar'];
+          
+          $query="SELECT * FROM alumnos WHERE Rut='$Rut' ";
+
+          $result=mysqli_query($enlace, $query);
+         
+          while($row=mysqli_fetch_array($result, MYSQLI_ASSOC))
+      
+
+          {
+
+          
+    
+  
+            ?>
+            
+            <h2 style= text-align:center>Bienvenidos <b style="color:#069">"<?php echo $row['Nombres'] ?> <?php echo $row['Apellidos'] ?>"</b> a la consulta de requisitos para la inscripccion de tu práctica!<br></h2></br>
+            <h2 style= text-align:left>Sus datos son los siguientes: <br></h2></br>
+            <p>Rut:</p>
+            <input type="text" name="Rut" value="<?php echo $row['Rut'] ?> "/>
+            <p>Nombres:</p>
+            <input type="text" name="Nombres" value="<?php echo $row['Nombres'] ?> "/>
+            <p>Apellidos</p>
+            <input type="text" name="Apellidos" value="<?php echo $row['Apellidos'] ?> "/>
+            <p>Carrera:</p>
+            <input type="text" name="Carrera" value="<?php echo $row['Carrera'] ?> "/>
+            <p>Tipo de malla:</p>
+            <input type="text" name="tipoMalla" value="<?php echo $row['tipoMalla'] ?> "/>
+            
+            <?php
+                $RutAlumno=$_POST['buscar'];
+           
+                $query2="SELECT * FROM estadopractica WHERE RutAlumno='$RutAlumno' ";
+                        
+                $result2=mysqli_query($enlace, $query2);
+                     
+                while($row=mysqli_fetch_array($result2, MYSQLI_ASSOC))
+            {
+              ?>
+            
+            <p style="color:#069"><b>Estado de su práctica:</b></p>
+            <input type="text" face="tahoma" name="estadoPractica" style="color:#069" value="<?php echo $row['estadoPractica'] ?> "/>
+
+            
+  
+            
+
+            <?php
+            
+          }
+          
+        }
+        }
+        ?>
+        
+        
+
+      
+
+
+
+
+
+
+
+
+

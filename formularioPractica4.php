@@ -36,6 +36,9 @@
 	            <li class="nav-item">
 	                <a class="nav-link" href="login.php">Iniciar sesion</a>
 	            </li>
+              <li class="nav-item">
+	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
+	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="#">Contáctanos</a>
 	            </li>
@@ -167,7 +170,7 @@
           <img src="images/logounab.png" width="130" height="130"> </div>
           <div id="logo" style="position:absolute; width: 200px; height:200px; top: 70px; left: 970px">
           <img src="images/infounab.png" width="150" height="50"> </div>
-        <h2 style= text-align:left><br><u>ANTECEDENTES EMPRESA</u></br></h2>
+        <h2 style= text-align:left><br><u>ACTIVIDADES QUE DESARROLLARÁ EN LA PRÁCTICA</u></br></h2>
         <div class="item">
           <p></p>
           <div>

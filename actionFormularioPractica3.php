@@ -14,7 +14,6 @@ if(!$enlace){
   echo"Errorr en la conexion con el servidor";
 }
 
-
 $nombreEmpresa = $_POST["nombreEmpresa"];
 $rutEmpresa = $_POST["rutEmpresa"];
 $giroEmpresa = $_POST["giroEmpresa"];

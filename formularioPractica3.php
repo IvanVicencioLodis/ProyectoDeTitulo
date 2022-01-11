@@ -159,6 +159,14 @@
       background-color: #0666a3;
       }
     </style>
+  <style>
+  body {
+  background-image: url("images/unabsede4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+  </style>
   </head>
   <body background="images/unabsede4.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center center">
     <div class="testbox">

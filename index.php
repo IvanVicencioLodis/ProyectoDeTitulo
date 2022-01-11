@@ -39,7 +39,7 @@
 	                <a class="nav-link" href="verEstadoPractica.php">Ver estado práctica</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="#">Contáctanos</a>
+	                <a class="nav-link" href="Contactanos.php">Contáctanos</a>
 	            </li>
 	            
 	        </ul>
@@ -180,7 +180,6 @@ body {
         <div class="btn-block">
         <a><input type="submit" value="Buscar" name="btn" style="border: #000 1px solid; background-color: #56BAF9" value="Buscar"></a>
 
-        <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Formulario"></a>
       <footer id="sticky-footer" class="py-1 bg-dark navbar-dark text-white-50" style="position: fixed; height: 36px; bottom: 0; width: 45.7%;">
       <div class="container text-center ">
         <small>Iván Vicencio &copy; versión 1.0</small>
@@ -226,6 +225,46 @@ body {
             <p>Tipo de malla:</p>
             <input type="text" name="tipoMalla" value="<?php echo $row['tipoMalla'] ?> "/>
 
+            <h2 style= text-align:left>Sus requisitos para optar a su práctica profesional en <b style="color:#069"> "<?php echo $row['Carrera'] ?>" de la <b style="color:#069"> "<?php echo $row['tipoMalla'] ?>" son: <br></h2></br>
+            
+            <?php
+            if($row['tipoMalla'] == "Malla Antigua" && $row['Carrera'] == "Ingeniería en Computación e Informática"){
+              echo"<h5><b>-Debe tener cursado y aprobado todas las asignaturas hasta el tercer año de la carrera(seis semestres).</b></h5> ";
+            }
+            elseif($row['tipoMalla'] == "Malla Antigua" && $row['Carrera'] == "Ingeniería Civil Informática"){
+              echo'<h5><b style="color:#008000"> Para la práctica temprana: </b></h5>';
+              echo'<h5><b> -Debe haber permanecido al menos dos años en el plan de estudios de la carrera (4 semestres) </b></h5>';
+              echo'<h5><b style="color:#008000"> Para la práctica profesional: </b></h5>';
+              echo'<h5><b> -Debe haber cursado y aprobado todas las asignaturas hasta el cuarto año de la carrera (8 semestres), incluída la práctica temprana.</b></h5>';
+
+            }
+            elseif($row['tipoMalla'] == "Malla Nueva" && $row['Carrera'] == "Ingeniería en Computación e Informática"){
+              echo'<h5><b style="color:#008000"> Para la práctica temprana: </b></h5>';
+              echo'<h5><b> -Debe tener el cuarto semestre inscrito y el tercer semestre aprobado.</b></h5>';
+              echo'<h5><b style="color:#008000"> Para la práctica profesional: </b></h5>';
+              echo'<h5><b> -Debe haber cursado y aprobado todas las asignaturas hasta el tercer año de la carrera (6 semestres), incluída la práctica temprana.</b></h5>';
+            }
+            elseif($row['tipoMalla'] == "Malla Nueva" && $row['Carrera'] == "Ingeniería Civil Informática"){
+              echo'<h5><b style="color:#008000"> Para la práctica temprana: </b></h5>';
+              echo'<h5><b> -Debe tener el cuarto semestre inscrito y el tercer semestre aprobado.</b></h5>';
+              echo'<h5><b style="color:#008000"> Para la práctica profesional: </b></h5>';
+              echo'<h5><b> -Debe haber cursado y aprobado todas las asignaturas hasta el cuarto año de la carrera (8 semestres), incluída la práctica temprana.</b></h5>';
+            }
+
+            ?>
+
+
+
+
+          <center><form name="prueba" id="prueba" action="formularioPractica.php">
+          <h2 style= text-align:left><b>¿Cumple con los requisitos?</b><br></h2></br>
+
+
+          <a href="formularioPractica.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="Sí"></a>
+          <a href="index.php"><input type="button" style="border: #000 1px solid; background-color: #56BAF9" value="No"></a>
+
+          
+          </form> </center>
   
 
             <?php
